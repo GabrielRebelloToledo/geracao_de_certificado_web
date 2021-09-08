@@ -1,0 +1,16 @@
+
+Id: <input [(ngModel)]="idBuscado" type="text">
+
+<button type="submit" (click)="buscarId()">Botão</button>
+<button type="submit"  (click)="gerar()">Gerar Certificado</button>
+<ul *ngIf="usuario != null">
+  <li>{{usuario.Nome_trabalho}}</li>
+  <li>{{usuario.Orientador}}</li>
+  <li>{{usuario.Coorientador}}</li>
+  <li>{{usuario.autor_1}}</li>
+  <li>{{usuario.autor_2}}</li>
+  <li>{{usuario.autor_3}}</li>
+  <li>{{usuario.autor_4}}</li>
+  <li>{{usuario.autor_5}}</li>
+</ul>
+
